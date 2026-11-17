@@ -1,286 +1,242 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Professionelle Möbelmontage in Hannover & Umgebung</title>
-<meta name="description" content="Erfahrener Möbelmontage Service in Hannover und Umgebung. Fachgerechter Aufbau von IKEA Möbeln, Küchen, Schränken, Betten, Sofas und Regalen. Zuverlässig, schnell und transparente Preise.">
-<meta name="keywords" content="Möbelmontage, Möbelmontage Service, IKEA Aufbau, IKEA PAX Schrank aufbauen, Küchenmontage, Schrankmontage, Kleiderschrank Montage, Sofaaufbau, Regalmontage, Handwerker Service, Umzugshilfe, Hannover, Hildesheim, Braunschweig, Wolfsburg, Salzgitter, Hameln, Celle, Nienburg, Peine, Lehrte, Langenhagen, Garbsen, Neustadt, Wolfenbüttel, Goslar, Holzminden, Stadthagen, Bückeburg, Minden, Detmold, Bad Oeynhausen, Möbel aufbauen">
-<style>
-:root {
---primary-color: #1a5276;
---accent-color: #2980b9;
---text-color: #333;
---bg-overlay: rgba(220, 235, 245, 0.88);
-}
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-line-height: 1.6;
-color: var(--text-color);
-background: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-background-size: cover;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-}
-.overlay {
-background: var(--bg-overlay);
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-padding: 20px;
-}
-.logo-container {
-text-align: center;
-margin-bottom: 10px;
-}
-.logo {
-display: inline-block;
-background: var(--primary-color);
-color: white;
-font-weight: bold;
-font-size: 1.6rem;
-padding: 12px 25px;
-border-radius: 50px;
-letter-spacing: 1.5px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-header {
-text-align: center;
-color: var(--primary-color);
-margin-bottom: 35px;
-padding-top: 10px;
-}
-header h1 {
-font-size: 2.6rem;
-margin-bottom: 15px;
-font-weight: 700;
-}
-header p {
-font-size: 1.25rem;
-max-width: 850px;
-margin: 0 auto;
-color: #333;
-}
-.container {
-max-width: 900px;
-margin: 0 auto;
-background: rgba(255, 255, 255, 0.95);
-padding: 35px;
-border-radius: 12px;
-box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-flex-grow: 1;
-}
-section {
-margin-bottom: 35px;
-}
-h2 {
-color: var(--primary-color);
-border-bottom: 3px solid var(--accent-color);
-padding-bottom: 10px;
-margin-bottom: 20px;
-font-size: 1.8rem;
-}
-ul.services-grid {
-list-style: none;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 15px;
-}
-ul.services-grid li {
-background: #fff;
-padding: 18px;
-border-left: 5px solid var(--accent-color);
-border-radius: 4px;
-box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-display: flex;
-align-items: center;
-font-weight: 600;
-transition: transform 0.2s, box-shadow 0.2s;
-}
-ul.services-grid li:hover {
-transform: translateY(-3px);
-box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-}
-.service-icon {
-width: 36px;
-height: 36px;
-margin-right: 15px;
-flex-shrink: 0;
-fill: var(--primary-color);
-}
-.contact-info {
-background: #edf2f7;
-padding: 25px;
-border-radius: 8px;
-margin-bottom: 25px;
-border-left: 5px solid var(--primary-color);
-}
-.contact-info p {
-margin-bottom: 15px;
-font-size: 1.2rem;
-line-height: 1.4;
-}
-.contact-info p:last-child {
-margin-bottom: 0;
-}
-.form-group {
-margin-bottom: 20px;
-}
-.form-group label {
-display: block;
-margin-bottom: 8px;
-font-weight: 600;
-color: var(--primary-color);
-}
-.form-group input, .form-group textarea {
-width: 100%;
-padding: 12px;
-border: 2px solid #cbd5e1;
-border-radius: 6px;
-font-size: 1rem;
-transition: border-color 0.2s;
-}
-.form-group input:focus, .form-group textarea:focus {
-outline: none;
-border-color: var(--accent-color);
-}
-.form-group textarea {
-height: 120px;
-resize: vertical;
-}
-.form-group input[type="file"] {
-border: none;
-padding: 10px 0;
-background: transparent;
-}
-button.submit-btn {
-background-color: var(--primary-color);
-color: white;
-padding: 15px 30px;
-border: none;
-border-radius: 6px;
-font-size: 1.2rem;
-cursor: pointer;
-width: 100%;
-transition: background-color 0.2s;
-font-weight: bold;
-box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-button.submit-btn:hover {
-background-color: #2980b9;
-}
-footer {
-text-align: center;
-color: #4a5568;
-margin-top: 40px;
-font-size: 1rem;
-font-weight: 500;
-}
-@media (max-width: 600px) {
-header h1 { font-size: 2.1rem; }
-.container { padding: 20px; }
-.logo { font-size: 1.3rem; padding: 10px 20px; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professionelle Möbelmontage Hannover & IKEA Montage Service</title>
+    <style>
+        :root {
+            --primary-color: #0f2537;
+            --accent-color: #c59b27;
+            --text-color: #333333;
+            --bg-light: #f8f9fa;
+            --whatsapp-color: #25d366;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--accent-color) var(--primary-color);
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--primary-color);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-color);
+            border-radius: 6px;
+            border: 3px solid var(--primary-color);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a47e1c;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: var(--text-color); }
+        
+        header { 
+            position: fixed; top: 0; width: 100%; 
+            background: var(--primary-color); 
+            border-bottom: 3px solid var(--accent-color);
+            padding: 1rem 0; z-index: 1000; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        nav a { color: #fff; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: var(--accent-color); }
+
+        section { padding: 80px 20px 40px; }
+        #kuechen { background: var(--bg-light); }
+        #schraenke { background: #ffffff; }
+        #regionen { background: var(--bg-light); }
+        #preise { background: #ffffff; }
+        #kontakt { background: #f0f4f8; }
+
+        .container { max-width: 900px; margin: auto; }
+        h1 { color: var(--primary-color); font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { color: var(--primary-color); font-size: 2rem; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; display: inline-block; margin-top: 0; }
+        
+        p { font-size: 1.1rem; margin-top: 10px; }
+
+        ul { list-style-type: none; padding: 0; margin-top: 15px; }
+        li { background: #fff; margin-bottom: 12px; padding: 15px; border-left: 4px solid var(--accent-color); box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+
+        .image-container { margin: 25px 0; text-align: center; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        img { max-width: 100%; height: auto; display: block; }
+
+        form { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; gap: 15px; margin-top: 15px; }
+        label { font-weight: bold; color: var(--primary-color); }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-size: 1rem;
+        }
+        textarea { resize: vertical; }
+
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+        }
+        .btn-upload {
+            border: 2px solid var(--accent-color);
+            color: var(--primary-color);
+            background-color: #fff;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .file-input-wrapper input[type=file] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+            height: 100%;
+        }
+        .btn-upload:hover {
+            background-color: var(--accent-color);
+            color: #fff;
+        }
+        .file-status {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        button.submit-btn {
+            padding: 15px; background-color: var(--accent-color); color: #fff; border: none; border-radius: 4px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background 0.3s;
+        }
+        button.submit-btn:hover { background-color: #a47e1c; }
+        
+        .contact-info { margin: 20px 0; font-size: 1.1rem; background: #fff; padding: 20px; border-radius: 8px; border-left: 4px solid var(--accent-color); }
+        .contact-actions { display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
+        .btn-contact {
+            padding: 15px 25px; text-decoration: none; font-weight: bold; border-radius: 8px; display: inline-flex; align-items: center; gap: 10px; font-size: 1.1rem; transition: transform 0.2s, background-color 0.3s; color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn-phone { background-color: var(--primary-color); border: 2px solid var(--accent-color); }
+        .btn-whatsapp { background-color: var(--whatsapp-color); }
+        .btn-contact:hover { transform: translateY(-2px); }
+    </style>
 </head>
 <body>
-<div class="overlay">
-<div class="logo-container">
-<span class="logo">MÖBELMONTAGE 24</span>
-</div>
+
 <header>
-<h1>Professionelle Möbelmontage</h1>
-<p>Erleben Sie einen erfahrenen Montageservice direkt bei Ihnen vor Ort. Unser kompetentes Montageteam garantiert eine fachgerechte und schnelle Umsetzung Ihrer Wünsche. Profitieren Sie von transparenter und stabiler Preisgestaltung inklusive Anfahrt und ohne versteckte Kosten. Zuverlässigkeit steht bei uns für jedes Möbelstück an erster Stelle.</p>
+    <nav>
+        <a href="#startseite">Startseite</a>
+        <a href="#kuechen">Küchenmontage</a>
+        <a href="#schraenke">Kleiderschrankmontage</a>
+        <a href="#regionen">Einsatzgebiete</a>
+        <a href="#preise">Preise</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
 </header>
-<main class="container">
-<section>
-<h2>Unser Serviceangebot</h2>
-<ul class="services-grid">
-<li>
-<svg class="service-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-Küchenmontage
-</li>
-<li>
-<svg class="service-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-Schränke & Schiebetürschränke
-</li>
-<li>
-<svg class="service-icon" viewBox="0 0 24 24"><path d="M22 10v6c0 1.1-.9 2-2 2h-1v3c0 .55-.45 1-1 1s-1-.45-1-1v-3H8v3c0 .55-.45 1-1 1s-1-.45-1-1v-3H5c-1.1 0-2-.9-2-2v-6c0-3.31 2.69-6 6-6h6c3.31 0 6 2.69 6 6zm-16 2.5c0 .83.67 1.5 1.5 1.5h11c.83 0 1.5-.67 1.5-1.5v-2.5h-14v2.5z"/></svg>
-Betten & Sofas
-</li>
-<li>
-<svg class="service-icon" viewBox="0 0 24 24"><path d="M14 3H6c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V9l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-2-5V4.5L19.5 9H14z"/></svg>
-Badezimmermöbel
-</li>
-<li>
-<svg class="service-icon" viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 18H6v-2h12v2zm0-4H6V4h12v12z"/><path d="M8 6h8v2H8zm0 4h8v2H8z"/></svg>
-Regale & Wandmontage
-</li>
-<li>
-<svg class="service-icon" viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12zm-9-6l5 3-5 3V11z"/></svg>
-TV-Wandhalterungen
-</li>
-<li>
-<svg class="service-icon" viewBox="0 0 24 24"><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H5V8h14v10zm-3-6H8v-2h8v2z"/></svg>
-Duschvorhänge & Duschtrennungen
-</li>
-<li>
-<svg class="service-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm0 10c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm1 9h-2c-.55 0-1 .45-1 1v1h4v-1c0-.55-.45-1-1-1z"/></svg>
-Lampen- & Vorhangmontage
-</li>
-<li>
-<svg class="service-icon" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 11l4.5 6H5l3.5-4.5z"/></svg>
-Bilder & Spiegel aufhängen
-</li>
-</ul>
+
+<section id="startseite" style="padding-top: 120px;">
+    <div class="container">
+        <h1>Professionelle Möbelmontage in Hannover und Umgebung</h1>
+        <p>Ihr zuverlässiger Experte für die professionelle <strong>Möbelmontage</strong>, fachgerechtes <strong>Aufbauen</strong> und die präzise <strong>Montage</strong> Ihrer Einrichtung. Ob Sie neue Möbel <strong>aufbauen</strong> lassen möchten oder einen erfahrenen Partner für den <strong>Möbelmontage</strong>-Service suchen – wir übernehmen das für Sie in ganz Niedersachsen.</p>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1200&auto=format&fit=crop" alt="Moderner großer Kleiderschrank mit Schiebetüren in einem eleganten Schlafzimmer">
+        </div>
+    </div>
 </section>
-<section>
-<h2>Einsatzgebiet</h2>
-<p>Wir sind für Sie in <strong>Hannover</strong> und einem Radius von bis zu <strong>100 Kilometern</strong> im Einsatz.</p>
+
+<section id="kuechen">
+    <div class="container">
+        <h2>Professionelle Küchenmontage & Geräteanschluss</h2>
+        <p>Fachgerechte <strong>Küchenmontage</strong> und passgenauer Aufbau Ihrer Küchenzeile. Unser <strong>Montage</strong>-Service umfasst den fachmännischen Aufbau, exakte Ausschnitte und den Anschluss aller Elektrogeräte. Wir sind spezialisiert auf die <strong>Montage</strong> verschiedenster Küchensysteme und sorgen dafür, dass Ihre Küche perfekt steht.</p>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200&auto=format&fit=crop" alt="Fachgerechte Montage und Installation einer modernen Einbauküche mit Elektrogeräten">
+        </div>
+    </div>
 </section>
-<section>
-<h2>Kontaktieren Sie uns</h2>
-<div class="contact-info">
-<p><strong>Telefon & WhatsApp:</strong>
-017641586117</p>
-<p><strong>E-Mail:</strong>
-schrankhannover@gmail.com</p>
-</div>
-<form action="mailto:schrankhannover@gmail.com,barnhouse24@gmail.com" method="post" enctype="multipart/form-data">
-<div class="form-group">
-<label for="name">Name:</label>
-<input type="text" id="name" name="Name" required>
-</div>
-<div class="form-group">
-<label for="phone">Telefonnummer / WhatsApp:</label>
-<input type="tel" id="phone" name="Telefon" required>
-</div>
-<div class="form-group">
-<label for="email">E-Mail-Adresse:</label>
-<input type="email" id="email" name="E-Mail" required>
-</div>
-<div class="form-group">
-<label for="message">Beschreibung der Montage:</label>
-<textarea id="message" name="Nachricht" placeholder="Welche Möbel sollen montiert werden, wann ist der Wunschtermin und wo findet die Montage statt?" required></textarea>
-</div>
-<div class="form-group">
-<label for="attachment">Foto oder Dokument anhängen:</label>
-<input type="file" id="attachment" name="Anhang" accept="image/*,.pdf">
-</div>
-<button type="submit" class="submit-btn">Anfrage senden</button>
-</form>
+
+<section id="schraenke">
+    <div class="container">
+        <h2>Montage von Kleiderschränken, Regalen und IKEA-Möbeln</h2>
+        <p>Spezialisiert auf <strong>IKEA</strong>-Möbel: Wir übernehmen die <strong>IKEA Pax</strong> <strong>Montage</strong>, bauen Ihren <strong>Kleiderschrank</strong> fachgerecht auf und richten <strong>Bestå</strong> sowie andere <strong>Schrank</strong>-Modelle ein. Vertrauen Sie auf unsere Erfahrung beim <strong>Möbel aufbauen</strong>, egal ob <strong>Kleiderschrank</strong>, Sideboard oder Regalsystem.</p>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=1200&auto=format&fit=crop" alt="Präzise Montage und Aufbau eines modernen Kleiderschranks mit Schiebetüren">
+        </div>
+    </div>
 </section>
-</main>
-<footer>
-© 2022 Professionelle Möbelmontage. Alle Rechte vorbehalten.
-</footer>
-</div>
+
+<section id="regionen">
+    <div class="container">
+        <h2>Möbelmontage in Ihrer Nähe: Unsere Einsatzorte</h2>
+        <p>Wir bieten unsere professionellen <strong>Möbelmontage</strong>-Leistungen und das <strong>Aufbauen</strong> von Möbeln flexibel und termingenau in folgenden Regionen an:</p>
+        <ul>
+            <li><strong>Möbelmontage Hannover</strong> — Zuverlässiger Service und schnelles <strong>Aufbauen</strong> direkt in der Landeshauptstadt.</li>
+            <li><strong>Möbelmontage Bielefeld</strong> — Kompetente <strong>Montage</strong> für den Raum Ostwestfalen.</li>
+            <li><strong>Möbelmontage Paderborn</strong> — Fachgerechtes <strong>Möbel aufbauen</strong> vor Ort.</li>
+            <li><strong>Möbelmontage Celle</strong> — Ihr zuverlässiger Partner für <strong>Montage</strong> und Aufbau.</li>
+            <li><strong>Möbelmontage Braunschweig</strong> — Professionelle <strong>Möbelmontage</strong> in der Region.</li>
+            <li><strong>Möbelmontage Wolfsburg</strong> — Erfahrenes Team für <strong>Montage</strong> und Einrichtung.</li>
+            <li><strong>Möbelmontage Göttingen</strong> — Präzises <strong>Aufbauen</strong> in Südniedersachsen.</li>
+        </u>
+    </div>
+</section>
+
+<section id="preise">
+    <div class="container">
+        <h2>Transparente Preise für Ihre Möbelmontage</h2>
+        <p>Faire Festpreise und transparente Kosten für erstklassige <strong>Möbelmontage</strong>. Bei uns wissen Sie genau, was das <strong>Aufbauen</strong> kostet. Keine versteckten Gebühren für Ihre <strong>Montage</strong> in Hannover und Umgebung.</p>
+    </div>
+</section>
+
+<section id="kontakt">
+    <div class="container">
+        <h2>Kontakt & Buchungsanfrage</h2>
+        <div class="contact-info">
+            <p>Senden Sie uns eine Beschreibung Ihrer Möbel und erhalten Sie eine unverbindliche und endgültige Preisberechnung für die Montage, inklusive der Anfahrtskosten.</p>
+            <div class="contact-actions">
+                <a href="tel:017641586117" class="btn-contact btn-phone">
+                    📞 Anrufen: 017641586117
+                </a>
+                <a href="https://wa.me/4917641586117" class="btn-contact btn-whatsapp" target="_blank">
+                    💬 WhatsApp Chat
+                </a>
+            </div>
+            <p style="margin-top: 25px;"><strong>E-Mail:</strong> <a href="mailto:schrankhannover@gmail.com">schrankhannover@gmail.com</a></p>
+        </div>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="access_key" value="DEIN_API_KEY_HIER">
+            <input type="hidden" name="from_name" value="Möbelmontage Landingpage">
+            <input type="hidden" name="subject" value="Neue Buchungsanfrage über die Website">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" required>
+
+            <label for="email">E-Mail-Adresse:</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="details">Auftragsdetails (Möbelart, Lieferdatum, Montageort):</label>
+            <textarea id="details" name="Details" rows="4" placeholder="Bitte beschreiben Sie hier Ihre Möbel für das unverbindliche Angebot..." required></textarea>
+
+            <label>Foto/Skizze hochladen (optional):</label>
+            <div class="file-input-wrapper">
+                <button type="button" class="btn-upload">Datei auswählen</button>
+                <input type="file" id="file" name="Anhang" accept="image/*" onchange="document.getElementById('file-chosen').textContent = this.files.length ? this.files[0].name : 'Keine Datei ausgewählt'">
+                <span id="file-chosen" class="file-status">Keine Datei ausgewählt</span>
+            </div>
+
+            <button type="submit" class="submit-btn">Anfrage absenden</button>
+        </form>
+    </div>
+</section>
+
 </body>
 </html>
 
